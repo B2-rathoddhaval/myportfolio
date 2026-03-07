@@ -815,7 +815,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    padding: 12px;
+    padding: 15px;
 }
 
 .skill-icon svg {
@@ -834,6 +834,7 @@ body {
 
 .skill-info {
     flex: 1;
+    width: 100%;
 }
 
 .skill-header {
@@ -1100,9 +1101,78 @@ body {
 }
 
 .modal-project {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 2rem; */
+}
+/* ===== PROJECT HIGHLIGHTS LIST STYLES ===== */
+.project-highlights {
+    margin: 1.5rem 0;
+}
+
+.project-highlights h4 {
+    color: var(--text-white);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.project-highlights h4::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--pure-red);
+}
+
+.project-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-points li {
+    color: var(--text-gray);
+    margin-bottom: 0.8rem;
+    padding-left: 1.8rem;
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.project-points li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--pure-red);
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.project-points li:hover {
+    color: var(--text-white);
+    transform: translateX(5px);
+}
+
+.project-points li:hover::before {
+    color: var(--pure-red);
+    transform: scale(1.2);
+}
+
+/* Alternative style with checkmark (if you prefer) */
+.project-points.checkmark li::before {
+    content: '✓';
+    font-weight: bold;
+}
+
+/* Alternative style with bullet (if you prefer) */
+.project-points.bullet li::before {
+    content: '•';
+    font-size: 1.5rem;
 }
 
 .modal-project-image {
@@ -1313,6 +1383,7 @@ body {
     grid-template-columns: 1fr 0.8fr;
     gap: 3rem;
     align-items: center;
+    position: relative;
 }
 
 .resume-content-left {
@@ -1405,6 +1476,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+.rd-sign-div{
+    position: absolute;
+    top: 20px;
+    right: -110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rd-sign-div img{
+    max-width: 50%;
+    opacity: 0.4;
+}
 
 .profile-image-wrapper {
     position: relative;
@@ -1475,7 +1558,7 @@ body {
 .footer-profile-image-wrapper {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 20%;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
 }
@@ -1696,4 +1779,61 @@ body {
     color: var(--pure-red);
     display: inline-block;
     animation: heartBeat 1.5s infinite;
+}
+
+/* ========== CUSTOM SCROLLBAR ========== */
+
+/* For Webkit Browsers (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+    width: 10px;  /* Vertical scrollbar width */
+    height: 10px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-bg);  /* Dark background */
+    border-left: 1px solid rgba(255, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff0000, #cc0000);
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg);
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ff3333, #ff0000);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--dark-bg);
+}
+
+/* For Firefox */
+ 
+
+/* Edge and IE */
+body {
+    -ms-overflow-style: none; /* Hides default scrollbar */
+}
+
+/* Optional: Custom scrollbar for specific sections */
+.portfolio-modal .modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.portfolio-modal .modal-content::-webkit-scrollbar-track {
+    background: var(--card-bg);
+}
+
+.portfolio-modal .modal-content::-webkit-scrollbar-thumb {
+    background: var(--pure-red);
+    border-radius: 4px;
+    border: 2px solid var(--card-bg);
+}
+
+/* Smooth scrolling for whole page */
+html {
+    scroll-behavior: smooth;
 }

@@ -46,7 +46,7 @@
         left: -100%;
         top: 80px;
         flex-direction: column;
-        background-color: var(--card-bg);
+        background: linear-gradient(360deg, #310000, #080808);
         width: 100%;
         text-align: center;
         gap: 0;
@@ -84,8 +84,11 @@
 
     .hero-typing {
         font-size: 1.8rem;
-        flex-direction: column;
-        gap: 0.2rem;
+        flex-direction: row;
+        gap: 0.4rem;
+    }
+    .hero-title{
+        margin-bottom: 5px;
     }
 
     .hero-description {
@@ -108,6 +111,9 @@
 @media screen and (max-width: 480px) {
     .header {
         padding: 0.8rem 1rem;
+    }
+    .nav-menu{
+        top: 66px;
     }
 
     .logo-text {
@@ -304,6 +310,7 @@
 
     .modal-project-info h2 {
         font-size: 1.5rem;
+        margin-top: 20px;
     }
 }
 
@@ -386,11 +393,21 @@
     .resume-title {
         font-size: 2.3rem;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
     .resume-card {
         padding: 2rem;
+    }
+    .rd-sign-div img{
+        max-width: 30%;
+        transform: rotate(90deg);
+        opacity: 0.4;
+    }
+    .rd-sign-div{
+        top: -116px;
+        right: -10px;
     }
 
     .resume-grid {
@@ -420,7 +437,14 @@
 
 @media screen and (max-width: 480px) {
     .resume-card {
-        padding: 1.5rem;
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+    .rd-sign-div{
+        top: -55px;
+    }
+    .rd-sign-div img{
+        max-width: 15%;
+        opacity: 0.6;
     }
 
     .resume-title {
@@ -438,6 +462,9 @@
     .profile-status {
         font-size: 0.8rem;
         padding: 0.3rem 0.8rem;
+    }
+    .profile-image-wrapper{
+        padding-top: 0;
     }
 }
 
@@ -504,6 +531,14 @@
 
     .footer-contact-item {
         justify-content: center;
+    }
+}
+@media screen and (max-width:545px) {
+    .hero-typing{
+        margin-bottom: 10px;
+    }
+    .services-grid{
+        padding: 0;
     }
 }
 
