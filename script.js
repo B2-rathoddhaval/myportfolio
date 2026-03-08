@@ -338,3 +338,129 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update active link when hash changes
     window.addEventListener('hashchange', setActiveLinkBasedOnURL);
 });
+
+// ========== ATTRACTIVE SCROLL TO TOP BUTTON ==========
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    const percentageSpan = document.getElementById('scrollPercentage');
+    const progressCircle = document.querySelector('.btn-progress');
+    
+    if (!scrollBtn || !percentageSpan || !progressCircle) return;
+    
+    function updateScrollProgress() {
+        const scroll = window.scrollY;
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        
+        // Calculate percentage
+        const percent = Math.min(100, Math.round((scroll / height) * 100));
+        
+        // Update percentage text with animation
+        percentageSpan.textContent = percent + '%';
+        
+        // Update progress circle using conic-gradient
+        const angle = (percent * 360) / 100;
+        progressCircle.style.background = `conic-gradient(
+            from 0deg,
+            var(--pure-red) ${angle}deg,
+            transparent ${angle}deg
+        )`;
+        
+        // Show/hide button with smooth animation
+        if (scroll > 200) {
+            if (!scrollBtn.classList.contains('active')) {
+                scrollBtn.classList.add('active');
+                // Add bounce effect when appearing
+                scrollBtn.style.animation = 'bounceIn 0.5s ease';
+                setTimeout(() => {
+                    scrollBtn.style.animation = '';
+                }, 500);
+            }
+        } else {
+            if (scrollBtn.classList.contains('active')) {
+                scrollBtn.classList.remove('active');
+                // Add fade out effect
+                scrollBtn.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => {
+                    scrollBtn.style.animation = '';
+                }, 300);
+            }
+        }
+    }
+    
+    // Add bounce animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) translateY(30px);
+            }
+            50% {
+                opacity: 0.9;
+                transform: scale(1.1) translateY(-5px);
+            }
+            80% {
+                opacity: 1;
+                transform: scale(0.95) translateY(2px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5) translateY(30px);
+            }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    // Initial call
+    updateScrollProgress();
+    
+    // Scroll event with throttling for performance
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                updateScrollProgress();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+    
+    // Click to scroll top with smooth animation
+    scrollBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Add click ripple effect
+        const circle = this.querySelector('.btn-circle');
+        circle.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            circle.style.transform = '';
+        }, 200);
+        
+        // Smooth scroll to top
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    // Hover effect enhancement
+    scrollBtn.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px) scale(1.02)';
+    });
+    
+    scrollBtn.addEventListener('mouseleave', function() {
+        this.style.transform = '';
+    });
+});

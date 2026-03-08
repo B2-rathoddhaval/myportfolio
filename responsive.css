@@ -395,6 +395,76 @@
     }
     
 }
+@media screen and (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .footer-col-profile {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .footer-profile {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-title {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links a:hover {
+        transform: translateX(0) scale(1.05);
+    }
+
+    .tools-grid {
+        justify-content: center;
+    }
+
+    .tools-note {
+        text-align: center;
+    }
+
+    .footer-col-contact {
+        padding-left: 0;
+    }
+
+    .footer-contact-item {
+        justify-content: center;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .resume-card {
@@ -561,6 +631,32 @@
     .footer-bottom {
         font-size: 0.8rem;
     }
+    .footer-profile {
+        gap: 0.8rem;
+    }
+
+    .footer-profile-image-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer-profile-name {
+        font-size: 1.3rem;
+    }
+
+    .footer-contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
 }
 
 /* ========== PRINT STYLES ========== */
@@ -597,4 +693,194 @@
     .section {
         page-break-inside: avoid;
     }
+}
+
+
+/* ========== ATTRACTIVE SCROLL TO TOP BUTTON ========== */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px) scale(0.8);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scroll-top-btn.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.btn-circle {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 
+                0 0 0 2px rgba(255, 0, 0, 0.2),
+                inset 0 2px 5px rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.scroll-top-btn:hover .btn-circle {
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.4),
+                0 0 0 3px rgba(255, 0, 0, 0.5),
+                inset 0 2px 10px rgba(255, 255, 255, 0.2);
+    animation: none;
+}
+
+.btn-progress {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        var(--pure-red) 0deg,
+        #ff6666 90deg,
+        #ff3333 180deg,
+        var(--pure-red) 270deg,
+        var(--pure-red) 360deg
+    );
+    -webkit-mask: radial-gradient(transparent 60%, black 61%);
+    mask: radial-gradient(transparent 60%, black 61%);
+    opacity: 0.8;
+    transition: transform 0.5s ease;
+}
+
+.btn-icon {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5), 0 2px 5px rgba(255, 255, 255, 0.1);
+    z-index: 2;
+    transition: all 0.4s ease;
+}
+
+.btn-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: var(--pure-red);
+    filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.5));
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.scroll-top-btn:hover .btn-icon svg {
+    transform: translateY(-5px) scale(1.1);
+    fill: white;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.btn-percentage {
+    color: var(--pure-red);
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    letter-spacing: 0.5px;
+}
+
+.scroll-top-btn:hover .btn-percentage {
+    background: var(--pure-red);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
+}
+
+/* Ripple effect on click */
+.btn-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.3);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.scroll-top-btn:active .btn-circle::after {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+    transition: 0s;
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .btn-circle {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .btn-icon {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .btn-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .btn-percentage {
+        font-size: 0.7rem;
+    }
+}
+
+/* Optional: Glow effect */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+    }
+}
+
+.scroll-top-btn.active .btn-circle {
+    animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite;
 }
