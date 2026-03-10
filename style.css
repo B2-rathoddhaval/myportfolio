@@ -96,50 +96,293 @@ body {
 }
 
 /* Dot positions - 30 dots with different sizes and animations */
-.dot:nth-child(1) { top: 5%; left: 3%; width: 6px; height: 6px; animation-duration: 12s; }
-.dot:nth-child(2) { top: 12%; left: 15%; width: 3px; height: 3px; animation-duration: 15s; animation-delay: 1s; }
-.dot:nth-child(3) { top: 22%; left: 25%; width: 5px; height: 5px; animation-duration: 10s; animation-delay: 2s; }
-.dot:nth-child(4) { top: 35%; left: 8%; width: 4px; height: 4px; animation-duration: 14s; animation-delay: 0.5s; }
-.dot:nth-child(5) { top: 45%; left: 35%; width: 7px; height: 7px; animation-duration: 11s; animation-delay: 3s; }
-.dot:nth-child(6) { top: 52%; left: 45%; width: 3px; height: 3px; animation-duration: 16s; animation-delay: 1.5s; }
-.dot:nth-child(7) { top: 63%; left: 55%; width: 5px; height: 5px; animation-duration: 13s; animation-delay: 2.5s; }
-.dot:nth-child(8) { top: 75%; left: 18%; width: 4px; height: 4px; animation-duration: 12s; animation-delay: 0.8s; }
-.dot:nth-child(9) { top: 82%; left: 65%; width: 6px; height: 6px; animation-duration: 15s; animation-delay: 1.2s; }
-.dot:nth-child(10) { top: 15%; left: 75%; width: 3px; height: 3px; animation-duration: 14s; animation-delay: 2.8s; }
-.dot:nth-child(11) { top: 25%; left: 85%; width: 5px; height: 5px; animation-duration: 11s; animation-delay: 3.2s; }
-.dot:nth-child(12) { top: 38%; left: 68%; width: 4px; height: 4px; animation-duration: 13s; animation-delay: 0.3s; }
-.dot:nth-child(13) { top: 48%; left: 78%; width: 6px; height: 6px; animation-duration: 16s; animation-delay: 2.1s; }
-.dot:nth-child(14) { top: 58%; left: 88%; width: 3px; height: 3px; animation-duration: 12s; animation-delay: 1.7s; }
-.dot:nth-child(15) { top: 68%; left: 95%; width: 5px; height: 5px; animation-duration: 14s; animation-delay: 3.5s; }
-.dot:nth-child(16) { top: 78%; left: 48%; width: 4px; height: 4px; animation-duration: 11s; animation-delay: 0.9s; }
-.dot:nth-child(17) { top: 88%; left: 58%; width: 6px; height: 6px; animation-duration: 15s; animation-delay: 2.3s; }
-.dot:nth-child(18) { top: 95%; left: 38%; width: 3px; height: 3px; animation-duration: 13s; animation-delay: 1.1s; }
-.dot:nth-child(19) { top: 8%; left: 95%; width: 5px; height: 5px; animation-duration: 16s; animation-delay: 2.9s; }
-.dot:nth-child(20) { top: 18%; left: 45%; width: 4px; height: 4px; animation-duration: 12s; animation-delay: 0.4s; }
-.dot:nth-child(21) { top: 28%; left: 55%; width: 7px; height: 7px; animation-duration: 14s; animation-delay: 1.3s; }
-.dot:nth-child(22) { top: 40%; left: 65%; width: 3px; height: 3px; animation-duration: 15s; animation-delay: 2.2s; }
-.dot:nth-child(23) { top: 50%; left: 75%; width: 5px; height: 5px; animation-duration: 11s; animation-delay: 0.7s; }
-.dot:nth-child(24) { top: 60%; left: 85%; width: 4px; height: 4px; animation-duration: 13s; animation-delay: 1.8s; }
-.dot:nth-child(25) { top: 70%; left: 12%; width: 6px; height: 6px; animation-duration: 16s; animation-delay: 2.4s; }
-.dot:nth-child(26) { top: 80%; left: 22%; width: 3px; height: 3px; animation-duration: 12s; animation-delay: 0.2s; }
-.dot:nth-child(27) { top: 90%; left: 32%; width: 5px; height: 5px; animation-duration: 14s; animation-delay: 3.1s; }
-.dot:nth-child(28) { top: 96%; left: 42%; width: 4px; height: 4px; animation-duration: 11s; animation-delay: 1.4s; }
-.dot:nth-child(29) { top: 45%; left: 92%; width: 6px; height: 6px; animation-duration: 15s; animation-delay: 2.7s; }
-.dot:nth-child(30) { top: 72%; left: 72%; width: 3px; height: 3px; animation-duration: 13s; animation-delay: 0.6s; }
+.dot:nth-child(1) {
+    top: 5%;
+    left: 3%;
+    width: 6px;
+    height: 6px;
+    animation-duration: 12s;
+}
+
+.dot:nth-child(2) {
+    top: 12%;
+    left: 15%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 15s;
+    animation-delay: 1s;
+}
+
+.dot:nth-child(3) {
+    top: 22%;
+    left: 25%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.dot:nth-child(4) {
+    top: 35%;
+    left: 8%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 14s;
+    animation-delay: 0.5s;
+}
+
+.dot:nth-child(5) {
+    top: 45%;
+    left: 35%;
+    width: 7px;
+    height: 7px;
+    animation-duration: 11s;
+    animation-delay: 3s;
+}
+
+.dot:nth-child(6) {
+    top: 52%;
+    left: 45%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 16s;
+    animation-delay: 1.5s;
+}
+
+.dot:nth-child(7) {
+    top: 63%;
+    left: 55%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 13s;
+    animation-delay: 2.5s;
+}
+
+.dot:nth-child(8) {
+    top: 75%;
+    left: 18%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 12s;
+    animation-delay: 0.8s;
+}
+
+.dot:nth-child(9) {
+    top: 82%;
+    left: 65%;
+    width: 6px;
+    height: 6px;
+    animation-duration: 15s;
+    animation-delay: 1.2s;
+}
+
+.dot:nth-child(10) {
+    top: 15%;
+    left: 75%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 14s;
+    animation-delay: 2.8s;
+}
+
+.dot:nth-child(11) {
+    top: 25%;
+    left: 85%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 11s;
+    animation-delay: 3.2s;
+}
+
+.dot:nth-child(12) {
+    top: 38%;
+    left: 68%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 13s;
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(13) {
+    top: 48%;
+    left: 78%;
+    width: 6px;
+    height: 6px;
+    animation-duration: 16s;
+    animation-delay: 2.1s;
+}
+
+.dot:nth-child(14) {
+    top: 58%;
+    left: 88%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 12s;
+    animation-delay: 1.7s;
+}
+
+.dot:nth-child(15) {
+    top: 68%;
+    left: 95%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 14s;
+    animation-delay: 3.5s;
+}
+
+.dot:nth-child(16) {
+    top: 78%;
+    left: 48%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 11s;
+    animation-delay: 0.9s;
+}
+
+.dot:nth-child(17) {
+    top: 88%;
+    left: 58%;
+    width: 6px;
+    height: 6px;
+    animation-duration: 15s;
+    animation-delay: 2.3s;
+}
+
+.dot:nth-child(18) {
+    top: 95%;
+    left: 38%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 13s;
+    animation-delay: 1.1s;
+}
+
+.dot:nth-child(19) {
+    top: 8%;
+    left: 95%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 16s;
+    animation-delay: 2.9s;
+}
+
+.dot:nth-child(20) {
+    top: 18%;
+    left: 45%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 12s;
+    animation-delay: 0.4s;
+}
+
+.dot:nth-child(21) {
+    top: 28%;
+    left: 55%;
+    width: 7px;
+    height: 7px;
+    animation-duration: 14s;
+    animation-delay: 1.3s;
+}
+
+.dot:nth-child(22) {
+    top: 40%;
+    left: 65%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 15s;
+    animation-delay: 2.2s;
+}
+
+.dot:nth-child(23) {
+    top: 50%;
+    left: 75%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 11s;
+    animation-delay: 0.7s;
+}
+
+.dot:nth-child(24) {
+    top: 60%;
+    left: 85%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 13s;
+    animation-delay: 1.8s;
+}
+
+.dot:nth-child(25) {
+    top: 70%;
+    left: 12%;
+    width: 6px;
+    height: 6px;
+    animation-duration: 16s;
+    animation-delay: 2.4s;
+}
+
+.dot:nth-child(26) {
+    top: 80%;
+    left: 22%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 12s;
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(27) {
+    top: 90%;
+    left: 32%;
+    width: 5px;
+    height: 5px;
+    animation-duration: 14s;
+    animation-delay: 3.1s;
+}
+
+.dot:nth-child(28) {
+    top: 96%;
+    left: 42%;
+    width: 4px;
+    height: 4px;
+    animation-duration: 11s;
+    animation-delay: 1.4s;
+}
+
+.dot:nth-child(29) {
+    top: 45%;
+    left: 92%;
+    width: 6px;
+    height: 6px;
+    animation-duration: 15s;
+    animation-delay: 2.7s;
+}
+
+.dot:nth-child(30) {
+    top: 72%;
+    left: 72%;
+    width: 3px;
+    height: 3px;
+    animation-duration: 13s;
+    animation-delay: 0.6s;
+}
 
 @keyframes floatDot {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) translateX(0);
         opacity: 0.15;
     }
+
     25% {
         transform: translateY(-25px) translateX(15px);
         opacity: 0.3;
     }
+
     50% {
         transform: translateY(25px) translateX(-15px);
         opacity: 0.2;
     }
+
     75% {
         transform: translateY(-15px) translateX(-25px);
         opacity: 0.25;
@@ -439,8 +682,16 @@ body {
 }
 
 @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .hero-description {
@@ -525,6 +776,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -536,6 +788,7 @@ body {
         width: 0;
         opacity: 0;
     }
+
     to {
         width: 100px;
         opacity: 1;
@@ -547,6 +800,7 @@ body {
         width: 0;
         opacity: 0;
     }
+
     to {
         width: 80px;
         opacity: 1;
@@ -557,6 +811,7 @@ body {
     from {
         transform: scaleX(0);
     }
+
     to {
         transform: scaleX(1);
     }
@@ -566,16 +821,20 @@ body {
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(100%);
     }
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
         transform: scale(1);
     }
+
     50% {
         opacity: 0.5;
         transform: scale(1.2);
@@ -583,9 +842,12 @@ body {
 }
 
 @keyframes heartBeat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.2);
     }
@@ -596,6 +858,7 @@ body {
         opacity: 0;
         transform: translateY(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -664,9 +927,17 @@ body {
     animation-fill-mode: both;
 }
 
-.service-card:nth-child(1) { animation-delay: 0.2s; }
-.service-card:nth-child(2) { animation-delay: 0.4s; }
-.service-card:nth-child(3) { animation-delay: 0.6s; }
+.service-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
 
 .service-card::before {
     content: '';
@@ -826,14 +1097,37 @@ body {
     animation-fill-mode: both;
 }
 
-.skill-card:nth-child(1) { animation-delay: 0.1s; }
-.skill-card:nth-child(2) { animation-delay: 0.2s; }
-.skill-card:nth-child(3) { animation-delay: 0.3s; }
-.skill-card:nth-child(4) { animation-delay: 0.4s; }
-.skill-card:nth-child(5) { animation-delay: 0.5s; }
-.skill-card:nth-child(6) { animation-delay: 0.6s; }
-.skill-card:nth-child(7) { animation-delay: 0.7s; }
-.skill-card:nth-child(8) { animation-delay: 0.8s; }
+.skill-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.skill-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.skill-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.skill-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.skill-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.skill-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.skill-card:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.skill-card:nth-child(8) {
+    animation-delay: 0.8s;
+}
 
 .skill-card:hover {
     transform: translateY(-5px);
@@ -934,7 +1228,8 @@ body {
     z-index: 2;
     padding: 6rem 0;
 }
-.explore-work-section{
+
+.explore-work-section {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -957,12 +1252,29 @@ body {
     animation-fill-mode: both;
 }
 
-.portfolio-card:nth-child(1) { animation-delay: 0.1s; }
-.portfolio-card:nth-child(2) { animation-delay: 0.2s; }
-.portfolio-card:nth-child(3) { animation-delay: 0.3s; }
-.portfolio-card:nth-child(4) { animation-delay: 0.4s; }
-.portfolio-card:nth-child(5) { animation-delay: 0.5s; }
-.portfolio-card:nth-child(6) { animation-delay: 0.6s; }
+.portfolio-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.portfolio-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.portfolio-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.portfolio-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.portfolio-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.portfolio-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
 
 .portfolio-card:hover {
     transform: translateY(-10px);
@@ -1150,6 +1462,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem; */
 }
+
 /* ===== PROJECT HIGHLIGHTS LIST STYLES ===== */
 .project-highlights {
     margin: 1.5rem 0;
@@ -1313,8 +1626,13 @@ body {
     animation-fill-mode: both;
 }
 
-.experience-card:nth-child(1) { animation-delay: 0.2s; }
-.experience-card:nth-child(2) { animation-delay: 0.4s; }
+.experience-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.experience-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
 
 .experience-card:hover {
     transform: translateY(-5px);
@@ -1521,7 +1839,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.rd-sign-div{
+
+.rd-sign-div {
     position: absolute;
     top: 20px;
     right: -110px;
@@ -1529,7 +1848,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.rd-sign-div img{
+
+.rd-sign-div img {
     max-width: 50%;
     opacity: 0.4;
 }
@@ -1849,9 +2169,12 @@ body {
 }
 
 @keyframes heartBeat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.2);
     }
@@ -1864,12 +2187,15 @@ body {
 
 /* For Webkit Browsers (Chrome, Safari, Edge, Opera) */
 ::-webkit-scrollbar {
-    width: 10px;  /* Vertical scrollbar width */
-    height: 10px; /* Horizontal scrollbar height */
+    width: 10px;
+    /* Vertical scrollbar width */
+    height: 10px;
+    /* Horizontal scrollbar height */
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--dark-bg);  /* Dark background */
+    background: var(--dark-bg);
+    /* Dark background */
     border-left: 1px solid rgba(255, 0, 0, 0.1);
 }
 
@@ -1890,11 +2216,12 @@ body {
 }
 
 /* For Firefox */
- 
+
 
 /* Edge and IE */
 body {
-    -ms-overflow-style: none; /* Hides default scrollbar */
+    -ms-overflow-style: none;
+    /* Hides default scrollbar */
 }
 
 /* Optional: Custom scrollbar for specific sections */
@@ -1992,18 +2319,23 @@ html {
 }
 
 @keyframes floatCircle {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
         opacity: 0.3;
     }
+
     25% {
         transform: translate(50px, -30px) scale(1.1);
         opacity: 0.4;
     }
+
     50% {
         transform: translate(-30px, 50px) scale(0.9);
         opacity: 0.2;
     }
+
     75% {
         transform: translate(-50px, -20px) scale(1.05);
         opacity: 0.35;
@@ -2034,9 +2366,12 @@ html {
 }
 
 @keyframes glowPulse {
-    0%, 100% {
+
+    0%,
+    100% {
         text-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
     }
+
     50% {
         text-shadow: 0 0 60px rgba(255, 0, 0, 0.8);
     }
@@ -2125,18 +2460,53 @@ html {
     animation-fill-mode: both;
 }
 
-.figma-card:nth-child(1) { animation-delay: 0.1s; }
-.figma-card:nth-child(2) { animation-delay: 0.2s; }
-.figma-card:nth-child(3) { animation-delay: 0.3s; }
-.figma-card:nth-child(4) { animation-delay: 0.4s; }
-.figma-card:nth-child(5) { animation-delay: 0.5s; }
-.figma-card:nth-child(6) { animation-delay: 0.6s; }
-.figma-card:nth-child(7) { animation-delay: 0.7s; }
-.figma-card:nth-child(8) { animation-delay: 0.8s; }
-.figma-card:nth-child(9) { animation-delay: 0.9s; }
-.figma-card:nth-child(10) { animation-delay: 1s; }
-.figma-card:nth-child(11) { animation-delay: 1.1s; }
-.figma-card:nth-child(12) { animation-delay: 1.2s; }
+.figma-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.figma-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.figma-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.figma-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.figma-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.figma-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.figma-card:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.figma-card:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.figma-card:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.figma-card:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.figma-card:nth-child(11) {
+    animation-delay: 1.1s;
+}
+
+.figma-card:nth-child(12) {
+    animation-delay: 1.2s;
+}
 
 .figma-card:hover {
     transform: translateY(-10px);
@@ -2250,15 +2620,15 @@ html {
     .figma-hero-title {
         font-size: 2.8rem;
     }
-    
+
     .figma-stats {
         gap: 2rem;
     }
-    
+
     .stat-number {
         font-size: 2.2rem;
     }
-    
+
     .figma-grid {
         grid-template-columns: 1fr;
         max-width: 500px;
@@ -2271,15 +2641,15 @@ html {
     .figma-hero-title {
         font-size: 2.2rem;
     }
-    
+
     .figma-hero-description {
         font-size: 1rem;
     }
-    
+
     .figma-categories {
         gap: 0.5rem;
     }
-    
+
     .category-btn {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
