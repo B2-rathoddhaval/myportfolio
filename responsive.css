@@ -185,9 +185,9 @@
     }
 
     .service-icon {
-        width: 80px;
-        height: 80px;
-        padding: 12px;
+        width: 60px;
+        height: 60px;
+        padding: 15px;
     }
 }
 
@@ -205,8 +205,8 @@
     }
 
     .service-icon {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         padding: 10px;
     }
 
@@ -276,6 +276,7 @@
     .skill-icon {
         width: 60px;
         height: 60px;
+        padding: 14px;
     }
 }
 
