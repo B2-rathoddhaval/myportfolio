@@ -17,7 +17,7 @@
     <meta property="og:title" content="Dhaval Rathod - Web Designer & UI/UX Designer">
     <meta property="og:description"
         content="Creating beautiful, functional digital experiences that users love. Specialized in modern web design and user-centered interfaces.">
-    <meta property="og:image" content="img/gemini.png">
+    <meta property="og:image" content="https://dhavalrathod.com/img/gemini.png">
     <meta property="og:url" content="https://dhavalrathod.com">
     <meta property="og:type" content="website">
 
@@ -30,8 +30,6 @@
 
     <!-- ========== PRELOAD CRITICAL RESOURCES ========== -->
     <link rel="preload" as="image" href="img/logo.png">
-    <link rel="preload" as="image" href="img/gemini.png">
-    <link rel="preconnect" href="https://images.unsplash.com">
 </head>
 
 <body>
@@ -74,7 +72,7 @@
 
     <!-- ========== HEADER / NAVIGATION ========== -->
     <header class="header" id="header">
-        <div class="nav-container">
+        <nav class="nav-container" aria-label="Main navigation">
             <!-- Logo with Red Dot -->
             <a href="#home" class="logo" aria-label="Dhaval Rathod - Go to homepage">
                 <div class="logo-dot">
@@ -92,7 +90,7 @@
             </button>
 
             <!-- Navigation Links -->
-            <ul class="nav-menu" id="navMenu" role="navigation">
+            <ul class="nav-menu" id="navMenu">
                 <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -100,7 +98,7 @@
                 <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <!-- ========== MAIN CONTENT ========== -->
@@ -464,11 +462,11 @@
                     <!-- Portfolio Card 1 -->
                     <div class="portfolio-card">
                         <div class="portfolio-image-wrapper">
-                            <img src="img/Pro-1.jpg" alt="Amar Infotech Website Redesign" class="portfolio-image"
+                            <img src="img/Pro-1.webp" width="1200" height="800" alt="Amar Infotech Website Redesign" class="portfolio-image"
                                 loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="#modal1" class="portfolio-view-btn"
-                                    aria-label="Amar Infotech Website Redesign">
+                                    aria-label="View Amar Infotech project details">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                                         <path
                                             d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
@@ -486,9 +484,9 @@
                     <!-- Portfolio Card 2 -->
                     <div class="portfolio-card">
                         <div class="portfolio-image-wrapper">
-                            <img src="img/Pro-2.jpg" alt="Happy Life University" class="portfolio-image" loading="lazy">
+                            <img src="img/Pro-2.webp" width="1200" height="800" alt="Happy Life University" class="portfolio-image" loading="lazy">
                             <div class="portfolio-overlay">
-                                <a href="#modal2" class="portfolio-view-btn" aria-label="Happy Life University">
+                                <a href="#modal2" class="portfolio-view-btn" aria-label="View Happy Life University project details">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                                         <path
                                             d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
@@ -506,10 +504,10 @@
                     <!-- Portfolio Card 3 -->
                     <div class="portfolio-card">
                         <div class="portfolio-image-wrapper">
-                            <img src="img/Pro-3.jpg" alt="Shreeji Astrology" class="portfolio-image" loading="lazy">
+                            <img src="img/Pro-3.webp" width="1200" height="800" alt="Shreeji Astrology" class="portfolio-image" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="#modal3" class="portfolio-view-btn"
-                                    aria-label="View Portfolio Website project details">
+                                    aria-label="View Shreeji Astrology project details">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                                         <path
                                             d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
@@ -527,11 +525,11 @@
                     <!-- Portfolio Card 4 -->
                     <div class="portfolio-card">
                         <div class="portfolio-image-wrapper">
-                            <img src="img/Pro-4.jpg" alt="Training Management System" class="portfolio-image"
+                            <img src="img/Pro-4.webp" width="1200" height="800" alt="Training Management System" class="portfolio-image"
                                 loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="#modal4" class="portfolio-view-btn"
-                                    aria-label="View Dashboard Design project details">
+                                    aria-label="View Training Management System project details">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                                         <path
                                             d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
@@ -549,11 +547,11 @@
                     <!-- Portfolio Card 5 -->
                     <div class="portfolio-card">
                         <div class="portfolio-image-wrapper">
-                            <img src="img/Pro-5.jpg" alt="Shivon Infra - Real Estate Website" class="portfolio-image"
+                            <img src="img/Pro-5.webp" width="1200" height="800" alt="Shivon Infra - Real Estate Website" class="portfolio-image"
                                 loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="#modal5" class="portfolio-view-btn"
-                                    aria-label="View Food Delivery App project details">
+                                    aria-label="View Shivon Infra project details">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                                         <path
                                             d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
@@ -571,10 +569,10 @@
                     <!-- Portfolio Card 6 -->
                     <div class="portfolio-card">
                         <div class="portfolio-image-wrapper">
-                            <img src="img/Pro-6.jpg" alt="SAVIO ERP LAMINATE" class="portfolio-image" loading="lazy">
+                            <img src="img/Pro-6.webp" width="1200" height="800" alt="SAVIO ERP LAMINATE" class="portfolio-image" loading="lazy">
                             <div class="portfolio-overlay">
                                 <a href="#modal6" class="portfolio-view-btn"
-                                    aria-label="View Healthcare Portal project details">
+                                    aria-label="View Savio ERP Laminate project details">
                                     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                                         <path
                                             d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
@@ -731,8 +729,8 @@
                                 </div>
                             </div>
 
-                            <a href="https://drive.google.com/file/d/12kxhYpR76QlL1-klxQ4hb9BVI09mgA2N/view?usp=drive_link"
-                                class="resume-download-btn" download aria-label="Download Resume PDF">
+                            <a href="https://drive.google.com/uc?export=download&amp;id=12kxhYpR76QlL1-klxQ4hb9BVI09mgA2N"
+                                class="resume-download-btn" aria-label="Download Resume PDF">
                                 <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
                                     <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
                                 </svg>
@@ -743,7 +741,7 @@
                         <!-- Right Side - Profile Image -->
                         <div class="resume-image-right">
                             <div class="profile-image-wrapper">
-                                <img src="img/gemini.png" alt="Dhaval Rathod profile photo" class="profile-image"
+                                <img src="img/gemini.webp" width="282" height="362" alt="Dhaval Rathod profile photo" class="profile-image"
                                     loading="lazy">
                                 <div class="profile-status" aria-label="Available for work">
                                     <span class="status-dot" aria-hidden="true"></span>
@@ -767,7 +765,7 @@
                 <div class="footer-col footer-col-profile">
                     <div class="footer-profile">
                         <div class="footer-profile-image-wrapper">
-                            <img src="img/dd.jpg" alt="Dhaval Rathod" class="footer-profile-image" loading="lazy">
+                            <img src="img/dd.webp" width="720" height="733" alt="Dhaval Rathod" class="footer-profile-image" loading="lazy">
                         </div>
                         <h3 class="footer-profile-name">Rathod <span>Dhaval</span></h3>
                     </div>
@@ -895,18 +893,18 @@
     <!-- Modal 1 -->
     <div class="modal" id="modal1" role="dialog" aria-modal="true" aria-labelledby="modal1-title">
         <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <a href="#" class="modal-close" aria-label="Close modal">
+        <div class="modal-container" tabindex="-1">
+            <button type="button" class="modal-close" aria-label="Close modal">
                 <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                     <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                 </svg>
-            </a>
+            </button>
 
             <div class="modal-content">
                 <div class="modal-project">
                     <div class="modal-project-image">
-                        <img src="img/Pro-1.jpg" alt="E-Commerce Platform" loading="lazy">
+                        <img src="img/Pro-1.webp" width="1200" height="800" alt="Amar Infotech website redesign" loading="lazy">
                     </div>
                     <div class="modal-project-info">
                         <h2 id="modal1-title">Amar Infotech Website Redesign</h2>
@@ -929,7 +927,7 @@
                         </div>
 
                         <div class="modal-project-buttons">
-                            <a href="https://www.amarinfotech.com/" class="modal-project-btn" target="_blank">Live
+                            <a href="https://www.amarinfotech.com/" class="modal-project-btn" target="_blank" rel="noopener noreferrer">Live
                                 Website</a>
                         </div>
                     </div>
@@ -941,18 +939,18 @@
     <!-- Modal 2 -->
     <div class="modal" id="modal2" role="dialog" aria-modal="true" aria-labelledby="modal2-title">
         <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <a href="#" class="modal-close" aria-label="Close modal">
+        <div class="modal-container" tabindex="-1">
+            <button type="button" class="modal-close" aria-label="Close modal">
                 <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                     <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                 </svg>
-            </a>
+            </button>
 
             <div class="modal-content">
                 <div class="modal-project">
                     <div class="modal-project-image">
-                        <img src="img/Pro-2.jpg" alt="Happy Life University" loading="lazy">
+                        <img src="img/Pro-2.webp" width="1200" height="800" alt="Happy Life University" loading="lazy">
                     </div>
                     <div class="modal-project-info">
                         <h2 id="modal2-title">Happy Life University</h2>
@@ -980,13 +978,13 @@
 
                         <div class="modal-project-buttons">
                             <a href="https://www.figma.com/design/ew7P8zvIXssoMqEC7dew8C/HPU-Happy?node-id=0-1&t=rVrlBeYxtNNGV9so-1"
-                                target="_blank" class="modal-project-btn">Figma UI Mobile</a>
+                                target="_blank" rel="noopener noreferrer" class="modal-project-btn">Figma UI Mobile</a>
                             <a href="https://www.figma.com/design/O2WfXPMzXCms2Sj0HQ7CEf/Happy-Life-University?node-id=1-2&t=T3DwaRHxqEnOIGwG-1"
-                                target="_blank" class="modal-project-btn">Figma Web</a>
-                            <a href="https://www.happylifeuniversity.in/" target="_blank" class="modal-project-btn">Live
+                                target="_blank" rel="noopener noreferrer" class="modal-project-btn">Figma Web</a>
+                            <a href="https://www.happylifeuniversity.in/" target="_blank" rel="noopener noreferrer" class="modal-project-btn">Live
                                 Website</a>
                             <a href="https://play.google.com/store/apps/details?id=com.amar.happylife&pcampaignid=web_share"
-                                target="_blank" class="modal-project-btn">Live App</a>
+                                target="_blank" rel="noopener noreferrer" class="modal-project-btn">Live App</a>
                         </div>
                     </div>
                 </div>
@@ -997,18 +995,18 @@
     <!-- Modal 3 -->
     <div class="modal" id="modal3" role="dialog" aria-modal="true" aria-labelledby="modal3-title">
         <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <a href="#" class="modal-close" aria-label="Close modal">
+        <div class="modal-container" tabindex="-1">
+            <button type="button" class="modal-close" aria-label="Close modal">
                 <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                     <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                 </svg>
-            </a>
+            </button>
 
             <div class="modal-content">
                 <div class="modal-project">
                     <div class="modal-project-image">
-                        <img src="img/Pro-3.jpg " alt="Shreeji Astrology Website & App" loading="lazy">
+                        <img src="img/Pro-3.webp" width="1200" height="800" alt="Shreeji Astrology Website & App" loading="lazy">
                     </div>
                     <div class="modal-project-info">
                         <h2 id="modal3-title">Shreeji Astrology</h2>
@@ -1044,9 +1042,9 @@
 
                         <div class="modal-project-buttons">
                             <a href="https://www.figma.com/design/DeNYDkn8BhLzRNHogo0fLa/Shreji-astro-Duplicate?node-id=416-645&t=qqPlLqxxvk7IqS5a-1"
-                                class="modal-project-btn" target="_blank">Figma UI Mobile</a>
+                                class="modal-project-btn" target="_blank" rel="noopener noreferrer">Figma UI Mobile</a>
                             <a href="https://www.figma.com/design/aJlCy17bjIpcr9IM56C7ba/Shreeji-Astro-Web?node-id=0-1&t=19WBOZ7tWKcNrAZI-1"
-                                class="modal-project-btn" target="_blank">Figma UI Web</a>
+                                class="modal-project-btn" target="_blank" rel="noopener noreferrer">Figma UI Web</a>
                             <a href="https://shreeji-astro.mydemoapp.us/en" class="modal-project-btn"
                                 target="_blank">Live Website</a>
                         </div>
@@ -1059,18 +1057,18 @@
     <!-- Modal 4 -->
     <div class="modal" id="modal4" role="dialog" aria-modal="true" aria-labelledby="modal4-title">
         <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <a href="#" class="modal-close" aria-label="Close modal">
+        <div class="modal-container" tabindex="-1">
+            <button type="button" class="modal-close" aria-label="Close modal">
                 <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                     <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                 </svg>
-            </a>
+            </button>
 
             <div class="modal-content">
                 <div class="modal-project">
                     <div class="modal-project-image">
-                        <img src="img/Pro-4.jpg" alt="Training Management System (TMS)" loading="lazy">
+                        <img src="img/Pro-4.webp" width="1200" height="800" alt="Training Management System (TMS)" loading="lazy">
                     </div>
                     <div class="modal-project-info">
                         <h2 id="modal4-title">Training Management System (TMS)</h2>
@@ -1079,6 +1077,7 @@
                             A comprehensive Training Management System with three distinct panels for Admin, Trainer,
                             and Trainee. Designed in Figma and developed with HTML/CSS, this system provides role-based
                             access and management for training programs, user progress tracking, and task assignment.
+                        </p>
                         <div class="project-highlights">
                             <h4>Three Dedicated Panels:</h4>
                             <ul class="project-points">
@@ -1101,11 +1100,10 @@
                                 <li>Modular HTML/CSS structure for easy maintenance and scalability</li>
                             </ul>
                         </div>
-                        </p>
 
                         <div class="modal-project-buttons">
                             <a href="https://www.figma.com/design/RyP35VB5owgfgzFKzqXHOl/IMS---ExcelPTP?node-id=0-1&t=rKgE43Tb5chU3ZhO-1"
-                                class="modal-project-btn" target="_blank">Figma UI Web</a>
+                                class="modal-project-btn" target="_blank" rel="noopener noreferrer">Figma UI Web</a>
                             <a href="https://tms.skillptp.com/admin/login" class="modal-project-btn"
                                 target="_blank">Live Website</a>
                         </div>
@@ -1118,18 +1116,18 @@
     <!-- Modal 5 -->
     <div class="modal" id="modal5" role="dialog" aria-modal="true" aria-labelledby="modal5-title">
         <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <a href="#" class="modal-close" aria-label="Close modal">
+        <div class="modal-container" tabindex="-1">
+            <button type="button" class="modal-close" aria-label="Close modal">
                 <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                     <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                 </svg>
-            </a>
+            </button>
 
             <div class="modal-content">
                 <div class="modal-project">
                     <div class="modal-project-image">
-                        <img src="img/Pro-5.jpg" alt="Shivon Infra Website" loading="lazy">
+                        <img src="img/Pro-5.webp" width="1200" height="800" alt="Shivon Infra Website" loading="lazy">
                     </div>
                     <div class="modal-project-info">
                         <h2 id="modal5-title">Shivon Infra - Premium Real Estate</h2>
@@ -1173,7 +1171,7 @@
                         </div>
 
                         <div class="modal-project-buttons">
-                            <a href="https://shivon.mydemoapp.us/" target="_blank" class="modal-project-btn">Live
+                            <a href="https://shivon.mydemoapp.us/" target="_blank" rel="noopener noreferrer" class="modal-project-btn">Live
                                 Website</a>
                         </div>
                     </div>
@@ -1185,18 +1183,18 @@
     <!-- Modal 6 -->
     <div class="modal" id="modal6" role="dialog" aria-modal="true" aria-labelledby="modal6-title">
         <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <a href="#" class="modal-close" aria-label="Close modal">
+        <div class="modal-container" tabindex="-1">
+            <button type="button" class="modal-close" aria-label="Close modal">
                 <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
                     <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
                 </svg>
-            </a>
+            </button>
 
             <div class="modal-content">
                 <div class="modal-project">
                     <div class="modal-project-image">
-                        <img src="img/Pro-6.jpg" alt="SAVIO ERP LAMINATE App Design" loading="lazy">
+                        <img src="img/Pro-6.webp" width="1200" height="800" alt="SAVIO ERP LAMINATE App Design" loading="lazy">
                     </div>
                     <div class="modal-project-info">
                         <h2 id="modal6-title">Savio ERP Laminate</h2>
@@ -1239,9 +1237,9 @@
 
                         <div class="modal-project-buttons">
                             <a href="https://www.figma.com/design/pA0oXfLVRBIgrj2COfo8cY/Savio?node-id=0-1&t=oErK19S7DbORqCg6-1"
-                                target="_blank" class="modal-project-btn">Figma Mobile</a>
+                                target="_blank" rel="noopener noreferrer" class="modal-project-btn">Figma Mobile</a>
                             <a href="https://play.google.com/store/apps/details?id=com.savio.lamination.erp&pcampaignid=web_share"
-                                target="_blank" class="modal-project-btn">Live App</a>
+                                target="_blank" rel="noopener noreferrer" class="modal-project-btn">Live App</a>
                         </div>
                     </div>
                 </div>

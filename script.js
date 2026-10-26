@@ -77,15 +77,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.getElementById('header');
     
     if (header) {
-        const handleScroll = debounce(function() {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        }, 10);
-        
-        window.addEventListener('scroll', handleScroll);
+        // requestAnimationFrame throttle so the header updates while scrolling, not after it stops
+        let headerTicking = false;
+        window.addEventListener('scroll', function() {
+            if (headerTicking) return;
+            headerTicking = true;
+            window.requestAnimationFrame(function() {
+                header.classList.toggle('scrolled', window.scrollY > 50);
+                headerTicking = false;
+            });
+        });
     }
 
     // ===== TYPING ANIMATION =====
@@ -198,13 +199,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalCloseBtns = document.querySelectorAll('.modal-close');
     const modalOverlays = document.querySelectorAll('.modal-overlay');
     const viewButtons = document.querySelectorAll('.portfolio-view-btn');
+    const focusableSelector = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    let activeModal = null;
+    let lastTrigger = null; // element to return focus to after closing
 
     // Function to open modal
-    function openModal(modal) {
+    function openModal(modal, trigger) {
         if (modal) {
             modal.style.display = 'flex';
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
-            
+            activeModal = modal;
+            lastTrigger = trigger || null;
+
             // Set focus to modal container for accessibility
             const modalContainer = modal.querySelector('.modal-container');
             if (modalContainer) {
@@ -218,11 +224,19 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modal) {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto'; // Restore scrolling
+            if (modal === activeModal) {
+                activeModal = null;
+                if (lastTrigger) lastTrigger.focus();
+                lastTrigger = null;
+            }
         }
     }
 
     // Close all modals function
     function closeAllModals() {
+        if (activeModal) {
+            closeModal(activeModal);
+        }
         modals.forEach(modal => {
             modal.style.display = 'none';
         });
@@ -235,8 +249,24 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetModal = document.querySelector(targetId);
-            openModal(targetModal);
+            openModal(targetModal, this);
         });
+    });
+
+    // Keep Tab focus inside the open modal
+    document.addEventListener('keydown', function(e) {
+        if (e.key !== 'Tab' || !activeModal) return;
+        const focusable = activeModal.querySelectorAll(focusableSelector);
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && (document.activeElement === first || !activeModal.contains(document.activeElement) || document.activeElement.classList.contains('modal-container'))) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
     });
 
     // Close modal when close button is clicked
