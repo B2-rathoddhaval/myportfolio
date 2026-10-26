@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== SEO ========== -->
+    <title>Dhaval Rathod — Web Designer & UI/UX Designer</title>
+    <meta name="description"
+        content="Dhaval Rathod — Web Designer & UI/UX Designer based in Ahmedabad. Modern web design, responsive websites and user-centered interfaces with 2+ years of experience.">
+    <meta name="keywords"
+        content="web designer, UI UX designer, portfolio, Ahmedabad, frontend developer, responsive design, Figma">
+    <meta name="author" content="Dhaval Rathod">
+    <meta name="theme-color" content="#f5f2ed">
+
+    <!-- ========== OPEN GRAPH ========== -->
+    <meta property="og:title" content="Dhaval Rathod — Web Designer & UI/UX Designer">
+    <meta property="og:description"
+        content="Creating beautiful, functional digital experiences that users love. Specialized in modern web design and user-centered interfaces.">
+    <meta property="og:image" content="https://dhavalrathod.com/assets/img/gemini.png">
+    <meta property="og:url" content="https://dhavalrathod.com">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- ========== FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap"
+        rel="stylesheet">
+
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) { }
+            if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', t);
+            document.documentElement.classList.add('js');
+        })();
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#home" class="brand" aria-label="Dhaval Rathod — back to top">
+                    <img src="assets/img/logo.png" alt="" width="34" height="34">
+                    <span>Rathod Dhaval</span>
+                </a>
+
+                <nav aria-label="Main navigation">
+                    <ul class="nav-links" id="navMenu">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="figma.html">Figma</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button type="button" class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="4" />
+                            <path
+                                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                        </svg>
+                    </button>
+                    <a href="#contact" class="btn btn-primary header-cta">Let's talk</a>
+                    <button type="button" class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false"
+                        aria-controls="navMenu">
+                        <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-main">
+                    <div>
+                        <p class="hero-intro rise">
+                            <span class="status-dot" aria-hidden="true"></span>
+                            <span><strong>Dhaval Rathod</strong><span class="hide-sm"> · Ahmedabad, India</span> · Available for work</span>
+                        </p>
+
+                        <h1 class="hero-title rise" style="--delay: .08s">
+                            I design interfaces people <span class="serif accent">love</span> to use.
+                        </h1>
+
+                        <p class="hero-role rise" style="--delay: .16s">
+                            <span>I am a</span>
+                            <span><span class="rotator" id="rotator">Web Designer</span><span class="caret"
+                                    aria-hidden="true"></span></span>
+                        </p>
+
+                        <p class="hero-desc rise" style="--delay: .2s">
+                            I design intuitive user experiences and build modern, responsive websites that combine
+                            creativity, usability, and performance.
+                        </p>
+
+                        <div class="hero-cta rise" style="--delay: .26s">
+                            <a href="#work" class="btn btn-primary">
+                                View Work
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-stats rise" style="--delay: .3s">
+                    <div class="stat">
+                        <div class="stat-num">2<sup>+</sup></div>
+                        <div class="stat-label">Years of experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">15<sup>+</sup></div>
+                        <div class="stat-label">Projects completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">55<sup>+</sup></div>
+                        <div class="stat-label">Figma UI designs</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TOOLS MARQUEE ========== -->
+        <div class="marquee" aria-label="Tools I use: Figma, Adobe XD, Photoshop, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, VS Code">
+            <div class="marquee-track" aria-hidden="true">
+                <div class="marquee-group">
+                    <span class="marquee-item">Figma</span>
+                    <span class="marquee-item">Adobe XD</span>
+                    <span class="marquee-item">Photoshop</span>
+                    <span class="marquee-item">HTML5</span>
+                    <span class="marquee-item">CSS3</span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-item">Bootstrap</span>
+                    <span class="marquee-item">Tailwind CSS</span>
+                    <span class="marquee-item">VS Code</span>
+                </div>
+                <div class="marquee-group">
+                    <span class="marquee-item">Figma</span>
+                    <span class="marquee-item">Adobe XD</span>
+                    <span class="marquee-item">Photoshop</span>
+                    <span class="marquee-item">HTML5</span>
+                    <span class="marquee-item">CSS3</span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-item">Bootstrap</span>
+                    <span class="marquee-item">Tailwind CSS</span>
+                    <span class="marquee-item">VS Code</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== SERVICES ========== -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Services</p>
+                        <h2 class="section-title reveal">What I can <span class="serif">do</span> for you</h2>
+                    </div>
+                    <p class="section-lead reveal">Solutions I provide through design and development — from first
+                        wireframe to a live, responsive website.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service reveal">
+                        <div class="service-top">
+                            <span class="service-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="16" rx="3" />
+                                    <path d="M2 8h20M6 5.5h.01M9 5.5h.01" />
+                                </svg>
+                            </span>
+                            <span class="service-num">01</span>
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>Custom responsive websites designed to look modern and perform seamlessly across all
+                            devices. I create user-friendly layouts that enhance engagement and usability.</p>
+                        <ul class="tags">
+                            <li class="tag">Responsive Design</li>
+                            <li class="tag">Modern UI Design</li>
+                            <li class="tag">Performance Optimization</li>
+                        </ul>
+                    </article>
+
+                    <article class="service reveal" style="--delay: .08s">
+                        <div class="service-top">
+                            <span class="service-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                    <path d="M2 2l7.586 7.586" />
+                                    <circle cx="11" cy="11" r="2" />
+                                </svg>
+                            </span>
+                            <span class="service-num">02</span>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered interface design focused on usability and smooth user journeys. I create
+                            wireframes, interactive prototypes, and design systems that improve the overall user
+                            experience.</p>
+                        <ul class="tags">
+                            <li class="tag">User Research</li>
+                            <li class="tag">Wireframing</li>
+                            <li class="tag">Interactive Prototypes</li>
+                        </ul>
+                    </article>
+
+                    <article class="service reveal" style="--delay: .16s">
+                        <div class="service-top">
+                            <span class="service-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16" />
+                                </svg>
+                            </span>
+                            <span class="service-num">03</span>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Clean and efficient frontend development using modern HTML, CSS, and JavaScript. I
+                            transform design concepts into responsive, interactive web experiences.</p>
+                        <ul class="tags">
+                            <li class="tag">HTML5/CSS3</li>
+                            <li class="tag">JavaScript</li>
+                            <li class="tag">Responsive Development</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WORK ========== -->
+        <section class="section" id="work" style="padding-top: 0">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Selected work</p>
+                        <h2 class="section-title reveal">My featured <span class="serif">projects</span></h2>
+                    </div>
+                    <p class="section-lead reveal">Some of my recent projects — websites, web apps and mobile app
+                        designs for real clients.</p>
+                </div>
+
+                <div class="work-grid">
+                    <button type="button" class="work-card reveal" data-case="case1"
+                        aria-label="View Amar Infotech project details">
+                        <div class="work-media">
+                            <img src="assets/img/Pro-1.webp" width="1200" height="800" alt="Amar Infotech website redesign"
+                                loading="lazy">
+                            <span class="work-open" aria-hidden="true">View project
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17L17 7M8 7h9v9" />
+                                </svg></span>
+                        </div>
+                        <div class="work-meta">
+                            <h3>Amar Infotech</h3>
+                            <span class="work-index">01</span>
+                        </div>
+                        <p class="work-cat">Website Redesign</p>
+                    </button>
+
+                    <button type="button" class="work-card reveal" style="--delay: .08s" data-case="case2"
+                        aria-label="View Happy Life University project details">
+                        <div class="work-media">
+                            <img src="assets/img/Pro-2.webp" width="1200" height="800" alt="Happy Life University website and app"
+                                loading="lazy">
+                            <span class="work-open" aria-hidden="true">View project
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17L17 7M8 7h9v9" />
+                                </svg></span>
+                        </div>
+                        <div class="work-meta">
+                            <h3>Happy Life University</h3>
+                            <span class="work-index">02</span>
+                        </div>
+                        <p class="work-cat">Website + Mobile App Design</p>
+                    </button>
+
+                    <button type="button" class="work-card reveal" data-case="case3"
+                        aria-label="View Shreeji Astrology project details">
+                        <div class="work-media">
+                            <img src="assets/img/Pro-3.webp" width="1200" height="800" alt="Shreeji Astrology website and app"
+                                loading="lazy">
+                            <span class="work-open" aria-hidden="true">View project
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17L17 7M8 7h9v9" />
+                                </svg></span>
+                        </div>
+                        <div class="work-meta">
+                            <h3>Shreeji Astrology</h3>
+                            <span class="work-index">03</span>
+                        </div>
+                        <p class="work-cat">Complete Astrology Platform</p>
+                    </button>
+
+                    <button type="button" class="work-card reveal" style="--delay: .08s" data-case="case4"
+                        aria-label="View Training Management System project details">
+                        <div class="work-media">
+                            <img src="assets/img/Pro-4.webp" width="1200" height="800" alt="Training Management System dashboard"
+                                loading="lazy">
+                            <span class="work-open" aria-hidden="true">View project
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17L17 7M8 7h9v9" />
+                                </svg></span>
+                        </div>
+                        <div class="work-meta">
+                            <h3>TMS — Training Management</h3>
+                            <span class="work-index">04</span>
+                        </div>
+                        <p class="work-cat">Multi-Panel Web Application</p>
+                    </button>
+
+                    <button type="button" class="work-card reveal" data-case="case5"
+                        aria-label="View Shivon Infra project details">
+                        <div class="work-media">
+                            <img src="assets/img/Pro-5.webp" width="1200" height="800" alt="Shivon Infra real estate website"
+                                loading="lazy">
+                            <span class="work-open" aria-hidden="true">View project
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17L17 7M8 7h9v9" />
+                                </svg></span>
+                        </div>
+                        <div class="work-meta">
+                            <h3>Shivon Infra</h3>
+                            <span class="work-index">05</span>
+                        </div>
+                        <p class="work-cat">Real Estate Builder Website</p>
+                    </button>
+
+                    <button type="button" class="work-card reveal" style="--delay: .08s" data-case="case6"
+                        aria-label="View Savio ERP Laminate project details">
+                        <div class="work-media">
+                            <img src="assets/img/Pro-6.webp" width="1200" height="800" alt="Savio ERP Laminate mobile app design"
+                                loading="lazy">
+                            <span class="work-open" aria-hidden="true">View project
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 17L17 7M8 7h9v9" />
+                                </svg></span>
+                        </div>
+                        <div class="work-meta">
+                            <h3>Savio ERP Laminate</h3>
+                            <span class="work-index">06</span>
+                        </div>
+                        <p class="work-cat">Mobile App UI/UX Design</p>
+                    </button>
+                </div>
+
+                <div class="figma-cta reveal">
+                    <div>
+                        <h3>55+ more designs in Figma</h3>
+                        <p>Website and mobile app UI concepts — travel, healthcare, e-commerce and more.</p>
+                    </div>
+                    <a href="figma.html" class="btn">
+                        View My Figma Designs
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS ========== -->
+        <section class="section" id="skills" style="padding-top: 0">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Skills</p>
+                        <h2 class="section-title reveal">Skills &amp; <span class="serif">expertise</span></h2>
+                    </div>
+                    <p class="section-lead reveal">Technologies and tools I work with every day.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill reveal">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">H5</span><span
+                                class="skill-pct">90%</span></div>
+                        <h3>HTML5</h3>
+                        <div class="meter" role="img" aria-label="HTML5 proficiency 90%"><span style="--value: 90%"></span></div>
+                    </div>
+                    <div class="skill reveal" style="--delay: .05s">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">C3</span><span
+                                class="skill-pct">85%</span></div>
+                        <h3>CSS3</h3>
+                        <div class="meter" role="img" aria-label="CSS3 proficiency 85%"><span style="--value: 85%"></span></div>
+                    </div>
+                    <div class="skill reveal" style="--delay: .1s">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">JS</span><span
+                                class="skill-pct">80%</span></div>
+                        <h3>JavaScript</h3>
+                        <div class="meter" role="img" aria-label="JavaScript proficiency 80%"><span style="--value: 80%"></span></div>
+                    </div>
+                    <div class="skill reveal" style="--delay: .15s">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">Fg</span><span
+                                class="skill-pct">90%</span></div>
+                        <h3>Figma</h3>
+                        <div class="meter" role="img" aria-label="Figma proficiency 90%"><span style="--value: 90%"></span></div>
+                    </div>
+                    <div class="skill reveal">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">Xd</span><span
+                                class="skill-pct">85%</span></div>
+                        <h3>Adobe XD</h3>
+                        <div class="meter" role="img" aria-label="Adobe XD proficiency 85%"><span style="--value: 85%"></span></div>
+                    </div>
+                    <div class="skill reveal" style="--delay: .05s">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">Ps</span><span
+                                class="skill-pct">85%</span></div>
+                        <h3>Adobe Photoshop</h3>
+                        <div class="meter" role="img" aria-label="Adobe Photoshop proficiency 85%"><span style="--value: 85%"></span></div>
+                    </div>
+                    <div class="skill reveal" style="--delay: .1s">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">Ux</span><span
+                                class="skill-pct">90%</span></div>
+                        <h3>UI/UX Design</h3>
+                        <div class="meter" role="img" aria-label="UI/UX Design proficiency 90%"><span style="--value: 90%"></span></div>
+                    </div>
+                    <div class="skill reveal" style="--delay: .15s">
+                        <div class="skill-head"><span class="skill-mono" aria-hidden="true">Rd</span><span
+                                class="skill-pct">95%</span></div>
+                        <h3>Responsive Design</h3>
+                        <div class="meter" role="img" aria-label="Responsive Design proficiency 95%"><span style="--value: 95%"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EXPERIENCE ========== -->
+        <section class="section" id="experience" style="padding-top: 0">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <p class="eyebrow">Experience</p>
+                        <h2 class="section-title reveal">My professional <span class="serif">journey</span></h2>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <article class="job reveal">
+                        <div>
+                            <span class="job-date">April 2026 — Present</span>
+                            <h3 class="job-company"><a href="https://qpaix.com/" target="_blank"
+                                    rel="noopener noreferrer">Qpaix Infotech Pvt. Ltd.</a></h3>
+                            <p class="job-role">Jr Web Designer &amp; UI/UX Designer</p>
+                        </div>
+                        <div>
+                            <p class="job-label">Key responsibilities</p>
+                            <ul class="job-list">
+                                <li>Designing user-centered interfaces for web and mobile products in Figma — from user
+                                    flows and wireframes to high-fidelity, interactive prototypes.</li>
+                                <li>Building responsive, pixel-perfect webpages with HTML, CSS, JavaScript, Bootstrap
+                                    and Tailwind CSS.</li>
+                                <li>Working closely with developers and stakeholders to turn requirements into clear,
+                                    usable designs and smooth design-to-development handoff.</li>
+                                <li>Creating reusable UI components and style guides to keep designs consistent across
+                                    projects.</li>
+                                <li>Refining layouts, typography and visual hierarchy of existing pages to improve
+                                    usability and accessibility.</li>
+                                <li>Ensuring cross-browser compatibility and optimized, fast-loading pages.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="job reveal">
+                        <div>
+                            <span class="job-date">November 2023 — February 2025</span>
+                            <h3 class="job-company">Amar Infotech</h3>
+                            <p class="job-role">Jr Web Designer &amp; UI/UX Designer</p>
+                            <p class="job-loc">Ahmedabad</p>
+                        </div>
+                        <div>
+                            <p class="job-label">Key responsibilities &amp; achievements</p>
+                            <ul class="job-list">
+                                <li>Collaborated with UI/UX teams to transform wireframes and prototypes into
+                                    responsive, fully functional webpages.</li>
+                                <li>Developed responsive websites using HTML, CSS, JavaScript, Bootstrap, and Tailwind
+                                    CSS with cross-browser compatibility.</li>
+                                <li>Conducted user research, created wireframes, and built high-fidelity prototypes
+                                    using Figma and Adobe XD.</li>
+                                <li>Transformed design concepts into pixel-perfect, responsive interfaces for web and
+                                    mobile platforms.</li>
+                                <li>Maintained and optimized 10+ client websites, improving performance, responsiveness,
+                                    and UI consistency.</li>
+                                <li>Worked closely with clients and development teams to deliver user-centered digital
+                                    experiences.</li>
+                                <li>Contributed to design systems and reusable components to ensure consistency and
+                                    faster design-to-development workflows.</li>
+                                <li>Improved user engagement and usability through structured layouts, typography, and
+                                    strong visual hierarchy.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="job reveal">
+                        <div>
+                            <span class="job-date">June 2023 — November 2023</span>
+                            <h3 class="job-company">ExcelPTP</h3>
+                            <p class="job-role">Web Design Intern</p>
+                            <p class="job-loc">Ahmedabad</p>
+                        </div>
+                        <div>
+                            <p class="job-label">Completed 6 months internship</p>
+                            <ul class="job-list">
+                                <li>Assisted senior designers in creating wireframes and mockups for client projects
+                                    using Figma.</li>
+                                <li>Designed responsive web pages using HTML, CSS, and Bootstrap under mentor guidance.
+                                </li>
+                                <li>Participated in client meetings and design presentations to understand
+                                    requirements.</li>
+                                <li>Created UI components and maintained design consistency across different pages.</li>
+                                <li>Learned and implemented user-centered design principles and best practices.</li>
+                                <li>Collaborated with development team to ensure proper implementation of designs.</li>
+                                <li>Conducted basic user research and usability testing for small projects.</li>
+                                <li>Contributed to 3+ client projects during internship period.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-panel reveal">
+                    <div class="contact-intro">
+                        <p class="eyebrow">Contact</p>
+                        <h2 class="contact-title">Let's work <span class="serif">together.</span></h2>
+                        <p class="contact-sub">I'm currently available for freelance work and full-time opportunities.
+                            Download my resume to know more about my experience and skills.</p>
+                        <div class="availability">
+                            <span class="status-dot" aria-hidden="true"></span>
+                            <span><strong>Open to new opportunities</strong>
+                                <span>Freelance projects &amp; full-time roles</span></span>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="https://drive.google.com/uc?export=download&amp;id=12kxhYpR76QlL1-klxQ4hb9BVI09mgA2N"
+                                class="btn btn-accent">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+                                </svg>
+                                Download Resume (PDF)
+                            </a>
+                            <a href="mailto:rathoddhaval1609@gmail.com" class="btn btn-ghost">Say hello</a>
+                        </div>
+                    </div>
+
+                    <ul class="contact-list">
+                        <li>
+                            <a class="contact-row" href="mailto:rathoddhaval1609@gmail.com">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="3" />
+                                        <path d="M2 7l10 7 10-7" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <span class="contact-row-label">Email</span>
+                                    <span class="contact-row-value">rathoddhaval1609@gmail.com</span>
+                                </span>
+                                <svg class="contact-row-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-row" href="tel:+918200281654">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <span class="contact-row-label">Phone</span>
+                                    <span class="contact-row-value">+91 82002 81654</span>
+                                </span>
+                                <svg class="contact-row-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-row"
+                                href="https://wa.me/918200281654?text=Hi%20Dhaval,%20I'm%20interested%20in%20your%20work"
+                                target="_blank" rel="noopener noreferrer">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <span class="contact-row-label">WhatsApp</span>
+                                    <span class="contact-row-value">Chat with me</span>
+                                </span>
+                                <svg class="contact-row-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-row" href="https://linkedin.com/in/rathod-dhaval-57a87a1b6" target="_blank"
+                                rel="noopener noreferrer">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <span class="contact-row-label">LinkedIn</span>
+                                    <span class="contact-row-value">Rathod Dhaval</span>
+                                </span>
+                                <svg class="contact-row-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14M13 6l6 6-6 6" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="contact-row">
+                                <span class="contact-row-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <span class="contact-row-label">Location</span>
+                                    <span class="contact-row-value">Ahmedabad, India</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span data-year>2026</span> Dhaval Rathod. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="figma.html">Figma Work</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://linkedin.com/in/rathod-dhaval-57a87a1b6" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn profile">
+                    <svg viewBox="0 0 100 100" aria-hidden="true">
+                        <path
+                            d="M90 90V60.7c0-14.4-3.1-25.4-19.9-25.4-8.1 0-13.5 4.4-15.7 8.6h-.2v-7.3H38.3V90h16.6V63.5c0-7 1.3-13.7 9.9-13.7 8.5 0 8.6 7.9 8.6 14.1v26H90zM11.3 36.6h16.6V90H11.3zM19.6 10c-5.3 0-9.6 4.3-9.6 9.6s4.3 9.7 9.6 9.7 9.6-4.4 9.6-9.7-4.3-9.6-9.6-9.6z" />
+                    </svg>
+                </a>
+                <a href="https://wa.me/918200281654" target="_blank" rel="noopener noreferrer"
+                    aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm-8.5 18.3c-1.79 0-3.54-.48-5.07-1.39l-.36-.21-3.76.98 1-3.65-.24-.38a9.86 9.86 0 0 1 8.43-15.08 9.86 9.86 0 0 1 9.93 9.86c0 5.45-4.48 9.87-9.93 9.87zm5.44-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z" />
+                    </svg>
+                </a>
+                <a href="mailto:rathoddhaval1609@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== PROJECT DIALOGS ========== -->
+    <dialog class="case" id="case1" aria-labelledby="case1-title">
+        <button type="button" class="case-close" data-close aria-label="Close project details">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="case-scroll">
+            <div class="case-media"><img src="assets/img/Pro-1.webp" width="1200" height="800"
+                    alt="Amar Infotech website redesign" loading="lazy"></div>
+            <div class="case-body">
+                <span class="case-cat">Web Design &amp; Development</span>
+                <h2 id="case1-title">Amar Infotech Website Redesign</h2>
+                <p class="case-desc">Complete redesign of Amar Infotech's official website using pure HTML, CSS, and
+                    JavaScript. The project focuses on creating a modern, responsive, and user-friendly interface that
+                    showcases their IT services effectively.</p>
+                <div class="case-cols">
+                    <div>
+                        <h3>Key features</h3>
+                        <ul class="job-list">
+                            <li>Fully responsive design that works perfectly on all devices (mobile, tablet, desktop)
+                            </li>
+                            <li>Modern UI with clean typography and visual hierarchy</li>
+                            <li>Smooth animations and interactions using pure CSS</li>
+                            <li>Optimized performance with fast loading speed</li>
+                            <li>Cross-browser compatible (Chrome, Firefox, Safari, Edge)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="case-links">
+                    <a href="https://www.amarinfotech.com/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">Live Website</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="case" id="case2" aria-labelledby="case2-title">
+        <button type="button" class="case-close" data-close aria-label="Close project details">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="case-scroll">
+            <div class="case-media"><img src="assets/img/Pro-2.webp" width="1200" height="800"
+                    alt="Happy Life University website and app" loading="lazy"></div>
+            <div class="case-body">
+                <span class="case-cat">Website Design &amp; Mobile App UI/UX</span>
+                <h2 id="case2-title">Happy Life University</h2>
+                <p class="case-desc">Complete website design and development for Happy Life University, along with
+                    UI/UX design for their mobile application. The platform offers online courses in Energy
+                    Psychology, Body Language, Vedic Science, and Influence Communication, backed by 30+ years of
+                    research and 10,000+ trained lives.</p>
+                <div class="case-cols">
+                    <div>
+                        <h3>Key features</h3>
+                        <ul class="job-list">
+                            <li>Modern, responsive website design with course catalog showing 74+ online courses and
+                                165+ academic programs</li>
+                            <li>Mobile app UI/UX design with intuitive navigation for students to access courses
+                                on-the-go</li>
+                            <li>Teacher monitoring dashboard for tracking student performance and accountability</li>
+                            <li>24/7 support system integration and lifetime learning access for students</li>
+                            <li>Featured on top Indian news channels with 99% satisfaction rate and 96% course
+                                completion rate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="case-links">
+                    <a href="https://www.happylifeuniversity.in/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">Live Website</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.amar.happylife&amp;pcampaignid=web_share"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Live App</a>
+                    <a href="https://www.figma.com/design/O2WfXPMzXCms2Sj0HQ7CEf/Happy-Life-University?node-id=1-2&amp;t=T3DwaRHxqEnOIGwG-1"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Figma Web</a>
+                    <a href="https://www.figma.com/design/ew7P8zvIXssoMqEC7dew8C/HPU-Happy?node-id=0-1&amp;t=rVrlBeYxtNNGV9so-1"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Figma UI Mobile</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="case" id="case3" aria-labelledby="case3-title">
+        <button type="button" class="case-close" data-close aria-label="Close project details">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="case-scroll">
+            <div class="case-media"><img src="assets/img/Pro-3.webp" width="1200" height="800"
+                    alt="Shreeji Astrology website and app" loading="lazy"></div>
+            <div class="case-body">
+                <span class="case-cat">Web Development &amp; UI/UX Design</span>
+                <h2 id="case3-title">Shreeji Astrology</h2>
+                <p class="case-desc">Complete astrology platform with website development using HTML, CSS, and
+                    JavaScript, along with Figma UI/UX designs for both web and mobile applications. The platform
+                    provides comprehensive astrological services including kundali generation, hora charts, panchang
+                    calculations, and numerology readings.</p>
+                <div class="case-cols">
+                    <div>
+                        <h3>Key features</h3>
+                        <ul class="job-list">
+                            <li>Kundali generation with detailed birth chart analysis and planetary positions</li>
+                            <li>Student hora (hourly astrology) for auspicious timing and muhurat selection</li>
+                            <li>Complete Panchang calculator with tithi, nakshatra, yoga, and karana</li>
+                            <li>Numerology readings including destiny number, soul urge number, and personality number
+                            </li>
+                            <li>Fully responsive design with multilingual support (English/Hindi)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Technical highlights</h3>
+                        <ul class="job-list">
+                            <li>Pure HTML, CSS, JavaScript development (no frameworks)</li>
+                            <li>Custom astrology calculation algorithms</li>
+                            <li>Mobile-first responsive design approach</li>
+                            <li>Optimized performance with fast loading speed</li>
+                            <li>Cross-browser compatible across all devices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="case-links">
+                    <a href="https://shreeji-astro.mydemoapp.us/en" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">Live Website</a>
+                    <a href="https://www.figma.com/design/aJlCy17bjIpcr9IM56C7ba/Shreeji-Astro-Web?node-id=0-1&amp;t=19WBOZ7tWKcNrAZI-1"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Figma UI Web</a>
+                    <a href="https://www.figma.com/design/DeNYDkn8BhLzRNHogo0fLa/Shreji-astro-Duplicate?node-id=416-645&amp;t=qqPlLqxxvk7IqS5a-1"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Figma UI Mobile</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="case" id="case4" aria-labelledby="case4-title">
+        <button type="button" class="case-close" data-close aria-label="Close project details">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="case-scroll">
+            <div class="case-media"><img src="assets/img/Pro-4.webp" width="1200" height="800"
+                    alt="Training Management System dashboard" loading="lazy"></div>
+            <div class="case-body">
+                <span class="case-cat">Complete Multi-Panel Web Application</span>
+                <h2 id="case4-title">Training Management System (TMS)</h2>
+                <p class="case-desc">A comprehensive Training Management System with three distinct panels for Admin,
+                    Trainer, and Trainee. Designed in Figma and developed with HTML/CSS, this system provides
+                    role-based access and management for training programs, user progress tracking, and task
+                    assignment.</p>
+                <div class="case-cols">
+                    <div>
+                        <h3>Three dedicated panels</h3>
+                        <ul class="job-list">
+                            <li><strong>Admin Panel</strong> — complete system control, user management, program
+                                creation, and analytics dashboard</li>
+                            <li><strong>Trainer Panel</strong> — course management, trainee progress tracking, task
+                                assignment, and performance reports</li>
+                            <li><strong>Trainee Panel</strong> — access training materials, submit tasks, view
+                                progress, and communicate with trainers</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Key features</h3>
+                        <ul class="job-list">
+                            <li>Role-based authentication with separate login portals for each user type</li>
+                            <li>Responsive dashboard designs optimized for both desktop and mobile</li>
+                            <li>Clean, intuitive UI with consistent design language across all panels</li>
+                            <li>Forgot password functionality and secure authentication flow</li>
+                            <li>Modular HTML/CSS structure for easy maintenance and scalability</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="case-links">
+                    <a href="https://tms.skillptp.com/admin/login" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">Live Website</a>
+                    <a href="https://www.figma.com/design/RyP35VB5owgfgzFKzqXHOl/IMS---ExcelPTP?node-id=0-1&amp;t=rKgE43Tb5chU3ZhO-1"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Figma UI Web</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="case" id="case5" aria-labelledby="case5-title">
+        <button type="button" class="case-close" data-close aria-label="Close project details">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="case-scroll">
+            <div class="case-media"><img src="assets/img/Pro-5.webp" width="1200" height="800"
+                    alt="Shivon Infra real estate website" loading="lazy"></div>
+            <div class="case-body">
+                <span class="case-cat">HTML Website Design &amp; Development</span>
+                <h2 id="case5-title">Shivon Infra — Premium Real Estate</h2>
+                <p class="case-desc">Complete website design and development for Shivon Infra, a premier real estate
+                    construction company in Ahmedabad. The website showcases their flagship project "Shivon Samashti"
+                    near Vaishnodevi Circle with AI-driven construction approach and premium 4 BHK apartments.</p>
+                <div class="case-cols">
+                    <div>
+                        <h3>Project highlights</h3>
+                        <ul class="job-list">
+                            <li><strong>14 Storeys</strong> — magnificent height with premium living spaces</li>
+                            <li><strong>2 Towers</strong> — twin architectural marvels rising high</li>
+                            <li><strong>100 Premium Apartments</strong> — 96 luxurious 4 BHK apartments + 4 exclusive
+                                penthouses</li>
+                            <li><strong>3 Level Basement Parking</strong> with 4 high-speed elevators + service lift
+                            </li>
+                            <li><strong>Road Facing Huge Showrooms</strong> — premium commercial spaces</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Apartment configurations</h3>
+                        <ul class="job-list">
+                            <li><strong>Type A:</strong> 340 SQYD Premium 4 BHK</li>
+                            <li><strong>Type B:</strong> 350 SQYD Premium 4 BHK</li>
+                            <li><strong>Type C:</strong> 360 SQYD Premium 4 BHK</li>
+                            <li><strong>Penthouses:</strong> 450–470 SQYD + 120 SQYD Terrace</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>AI-powered features</h3>
+                        <ul class="job-list">
+                            <li>Smart Cost Forecasting with 95% accuracy</li>
+                            <li>AI Site Planning using machine learning algorithms</li>
+                            <li>Automated Material Estimation reducing waste by 30%</li>
+                            <li>Real-Time Project Tracking with 24/7 monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="case-links">
+                    <a href="https://shivon.mydemoapp.us/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary">Live Website</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="case" id="case6" aria-labelledby="case6-title">
+        <button type="button" class="case-close" data-close aria-label="Close project details">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                aria-hidden="true">
+                <path d="M18 6L6 18M6 6l12 12" />
+            </svg>
+        </button>
+        <div class="case-scroll">
+            <div class="case-media"><img src="assets/img/Pro-6.webp" width="1200" height="800"
+                    alt="Savio ERP Laminate mobile app design" loading="lazy"></div>
+            <div class="case-body">
+                <span class="case-cat">Mobile App UI/UX Design (Figma)</span>
+                <h2 id="case6-title">Savio ERP Laminate</h2>
+                <p class="case-desc">Complete UI/UX design in Figma for SAVIO ERP LAMINATE, a powerful mobile ERP
+                    solution available on Google Play Store. The app is designed for laminate manufacturers and
+                    distributors to manage daily operations, monitor accounts, and track employee productivity
+                    through an intuitive mobile interface.</p>
+                <div class="case-cols">
+                    <div>
+                        <h3>Key features designed</h3>
+                        <ul class="job-list">
+                            <li><strong>Account Ledger View</strong> — real-time account transactions and ledger
+                                balances at fingertips</li>
+                            <li><strong>Inventory Management</strong> — instant access to current stock levels,
+                                product details, and inventory summaries</li>
+                            <li><strong>POP Request Entry</strong> — quick recording and management of Purchase Order
+                                Point requests from field</li>
+                            <li><strong>Daily Expense Tracking</strong> — monitor operational expenses for better
+                                financial control</li>
+                            <li><strong>Daily Visit Recording</strong> — field visit logs and follow-ups for
+                                sales/service teams</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Additional features</h3>
+                        <ul class="job-list">
+                            <li><strong>Attendance System</strong> — easy employee attendance recording for accurate
+                                payroll</li>
+                            <li><strong>Sales Order Entry</strong> — create and manage sales orders on-the-go for
+                                faster response</li>
+                            <li><strong>Data Security</strong> — no data sharing with third parties, complete privacy
+                                protection</li>
+                            <li><strong>Real-time Sync</strong> — seamless synchronization across devices and
+                                platforms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="case-links">
+                    <a href="https://play.google.com/store/apps/details?id=com.savio.lamination.erp&amp;pcampaignid=web_share"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live App</a>
+                    <a href="https://www.figma.com/design/pA0oXfLVRBIgrj2COfo8cY/Savio?node-id=0-1&amp;t=oErK19S7DbORqCg6-1"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Figma Mobile</a>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
